@@ -1,0 +1,19 @@
+// MAIN FILE
+// This file should not contain anything but @import and comments
+// Files should be imported according to the folder they live in, one after the other in the following order:
+// abstracts, vendors-extensions, vendors, base, components, ...
+
+@import './abstracts/helpers';
+
+@import './vendors-extensions/bootstrap';
+
+@import './vendors/bootstrap';
+
+@import './base/base';
+@import './base/typography';
+
+@import './components/icons';
+@import './components/texts';
+// ...
+
+@import './shame';

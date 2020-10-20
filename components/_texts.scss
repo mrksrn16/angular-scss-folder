@@ -1,0 +1,19 @@
+// line-clamp property truncates text at a specific number of lines
+// syntax: <p class="truncate-text-${lines}"></p>
+// example: <p class="truncate-text-3"></p>
+
+
+$lines: 5;
+
+@for $i from 1 through $lines {
+    .truncate-text-#{$i} {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+// ref: https://css-tricks.com/almanac/properties/l/line-clamp/

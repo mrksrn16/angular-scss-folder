@@ -1,0 +1,24 @@
+// overriding bootstrap variables for theming
+
+
+$primary: #ff5d15; // changing the default variable value
+
+// or you can modify map
+$theme-colors: (
+  "primary": #ff5d15,
+);
+
+// also you can add your custom variable in a map
+$theme-colors: (
+  "custom-color": #3b8392
+);
+
+$theme-colors: map-remove($theme-colors, "success", "info"); // removing unused bootstrap variables
+
+// modify spacers
+$spacers: (
+  5: 5px,
+);
+
+
+// ref: https://getbootstrap.com/docs/4.0/getting-started/theming/
